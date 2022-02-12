@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(images/bg-intro-desktop.png);
+    height: 100vh;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1050px;
+    max-width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.container-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.col-50 {
+    flex-basis: calc(50% - 3rem);
+}
+
+.title {
+    color: hsl(0, 0%, 100%);
+    font-size: 2.7rem;
+    line-height: 3.5rem;
+}
+
+.description {
+    color: hsl(0, 0%, 100%);
+    margin-top: 2rem;
+}
+
+.oferta {
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+    padding: .9rem 4rem;
+    border-radius: .5rem;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0px 7px 1px 0px hsla(249, 10%, 26%, 0.288);
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.oferta span {
+    color: hsl(0, 0%, 85%);
+    font-weight: 400;
+}
+
+.formulario {
+    background: hsl(0, 0%, 100%);
+    padding: 2rem;
+    border-radius: .7rem;
+    box-shadow: 0px 10px 1px 0px hsla(249, 10%, 26%, 0.288);
+}
+
+.formulario input {
+    display: block;
+    width: 100%;
+    margin-bottom: 1.3rem;
+    padding: 1rem 3rem 1rem 2rem;
+    border-radius: .3rem;
+    border: 1px solid hsl(246, 25%, 77%);
+    outline: none;
+    font-weight: 600;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+    background: hsl(154, 59%, 51%);
+    display: block;
+    width: 100%;
+    padding: 1.2rem;
+    text-align: center;
+    border: none;
+    border-radius: .3rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0px 4px 0.5px 0px hsl(154, 57%, 43%);
+    margin-bottom: 1rem;
+}
+
+.terminos {
+    color: hsl(246, 25%, 77%);
+    font-size: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.terminos span {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+.active {
+    background: url(images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position-x: 94%;
+    background-position-y: 50%;
+    background-size: 22px;
+}
+
+.error {
+    display: none;
+    color: hsl(0, 100%, 74%);
+    font-size: 11px;
+    position: relative;
+    top: -16px;
+    text-align: end;
+}
+
+@media(max-width:475px) {
+    .container-form {
+        flex-direction: column;
+    }
+    .content-form {
+        margin-top: 3rem;
+    }
+    .title {
+        text-align: center;
+        margin-top: 4rem;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .description {
+        text-align: center;
+        font-size: .9rem;
+    }
+    .formulario {
+        margin-bottom: 3rem;
+    }
+}
